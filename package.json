@@ -1,0 +1,12 @@
+{
+    "name": "@jamen/svelte-router",
+    "author": "Jamen Marz <me@jamenmarz.com>",
+    "description": "Routing for Svelte with components and stores.",
+    "main": "src/svelte-router.js",
+    "version": "0.1.0",
+    "repository": "jamen/svelte-router",
+    "module": "./src/main.js",
+    "dependencies": {
+        "svelte": "3.4.0"
+    }
+}
