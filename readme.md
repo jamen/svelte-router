@@ -53,13 +53,12 @@ If you want to use your own store, then both `Router` and `Link` accept a `route
 
 ```html
 <script>
-    import { Router } from '@jamen/svelte-router'
+    import { Router, Link } from '@jamen/svelte-router'
     import { custom } from '../stores.js'
     // ...
 </script>
 
-<Router {routes} router={custom} />
-
+<Router router={custom} {routes} />
 <Link router={custom} href='/'>Home</Link>
 ```
 

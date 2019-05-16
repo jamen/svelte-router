@@ -7,10 +7,12 @@
     function click (event) {
         event.preventDefault()
 
+        let path = event.target.href
+
         if (window.history) {
-            history.pushState(null, '', event.target.href)
+            history.pushState(null, '', location.origin === 'file://' ? '#' + path : path)
         } else {
-            location.hash = event.target.href
+            location.hash = path
         }
 
         window.scrollTo(0, 0)
