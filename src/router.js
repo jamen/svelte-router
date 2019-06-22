@@ -10,7 +10,7 @@ export const route = () => {
     let queryString = location.search
     let query = {}
 
-    if (!window.history) {
+    if (!window.history || window.location.protocol === 'file:') {
         path = location.hash.slice(1) || '/'
 
         if (path[0] !== '/') {
