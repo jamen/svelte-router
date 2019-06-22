@@ -3,7 +3,7 @@
     "author": "Jamen Marz <me@jamenmarz.com>",
     "description": "Routing for Svelte with components and stores.",
     "main": "src/svelte-router.js",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "repository": "jamen/svelte-router",
     "module": "./src/main.js",
     "dependencies": {
