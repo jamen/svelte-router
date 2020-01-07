@@ -15,7 +15,7 @@
 
         window.scrollTo(0, 0)
 
-        $router = route()
+        $store = route()
 
         return false
     }
