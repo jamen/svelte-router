@@ -21,7 +21,7 @@ export const route = () => {
 
         if (hashQuery !== -1) {
             queryString = location.hash.slice(hashQuery)
-            path = location.hash.replace('#', '').slice(0, hashQuery)
+            path = location.hash.replace(/\#\?/, '').slice(0, hashQuery)
         }
     }
 
