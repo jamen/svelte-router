@@ -1,6 +1,8 @@
 # @jamen/svelte-router
 
-Svelte router using a store and components.
+Svelte router with a store and components.
+
+**NOTE:** You should consider using [SvelteKit](https://kit.svelte.dev/) with [`@sveltejs/adapter-static`](https://github.com/sveltejs/kit/tree/master/packages/adapter-static). It comes with routing.
 
 ## Usage
 

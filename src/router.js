@@ -5,7 +5,7 @@ export const router = writable({
     query: {}
 })
 
-export const navigate = (href) => {
+export const navigate = (href, store = router) => {
     if (window.history) {
         history.pushState(null, '', location.origin === 'file://' ? '#' + href : href)
     } else {
@@ -14,9 +14,7 @@ export const navigate = (href) => {
 
     window.scrollTo(0, 0)
 
-    $router = route()
-
-    return false
+    store.set(route())
 }
 
 export const route = () => {
