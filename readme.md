@@ -2,7 +2,7 @@
 
 Svelte router with a store and components.
 
-**NOTE:** You should consider using [SvelteKit](https://kit.svelte.dev/) with [`@sveltejs/adapter-static`](https://github.com/sveltejs/kit/tree/master/packages/adapter-static). It comes with routing.
+**NOTE:** Consider using [SvelteKit](https://kit.svelte.dev/) with [@sveltejs/adapter-static](https://github.com/sveltejs/kit/tree/master/packages/adapter-static) instead. It has routing.
 
 ## Usage
 

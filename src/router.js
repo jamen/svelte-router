@@ -44,8 +44,8 @@ export const route = () => {
     if (queryString) {
         const parts = queryString.slice(1).split('&')
         for (let i = 0; i < parts.length; i++) {
-            const pair = parts[i].split('=')
-            query[pair[0]] = pair[1]
+            const [k, v] = parts[i].split('=')
+            query[k] = v === undefined ? '' : decodeURIComponent(v)
         }
     }
 
