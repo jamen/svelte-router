@@ -5,6 +5,20 @@ export const router = writable({
     query: {}
 })
 
+export const navigate = (href) => {
+    if (window.history) {
+        history.pushState(null, '', location.origin === 'file://' ? '#' + href : href)
+    } else {
+        location.hash = href
+    }
+
+    window.scrollTo(0, 0)
+
+    $router = route()
+
+    return false
+}
+
 export const route = () => {
     let path = location.pathname
     let queryString = location.search
@@ -21,7 +35,7 @@ export const route = () => {
 
         if (hashQuery !== -1) {
             queryString = location.hash.slice(hashQuery)
-            path = location.hash.slice(0, hashQuery)
+            path = location.hash.slice(0, hashQuery).replace(/[#\?]/g, '')
         }
     }
 
